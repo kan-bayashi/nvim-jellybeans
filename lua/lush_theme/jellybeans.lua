@@ -109,7 +109,7 @@ local theme = lush(function()
     -- styling for that group (meaning they mostly get styled as Normal)
     -- or leave them commented to apply vims default colouring or linking.
 
-    Comment      { fg = grey }, -- any comment
+    Comment      { fg = grey, gui = "italic" }, -- any comment
     ColorColumn  { bg = total_black }, -- used for the columns set with 'colorcolumn'
     Conceal      { fg = morning_glory }, -- placeholder characters substituted for concealed text (see 'conceallevel')
     Cursor       { fg = background, bg = perano }, -- character under the cursor
@@ -127,14 +127,14 @@ local theme = lush(function()
     -- TermCursorNC { }, -- cursor in an unfocused terminal
     ErrorMsg     { bg = old_brick }, -- error messages on the command line
     VertSplit    { fg = gravel }, -- the column separating vertically split windows
-    Folded       { fg = grey_chateau, bg = bright_grey }, -- line used for closed folds
-    FoldColumn   { fg = shuttle_grey, bg = mine_shaft }, -- 'foldcolumn'
+    Folded       { fg = grey_chateau, bg = bright_grey, gui = "italic"} , -- line used for closed folds
+    FoldColumn   { fg = shuttle_grey, bg = mine_shaft}, -- 'foldcolumn'
     SignColumn   { fg = boulder }, -- column where |signs| are displayed
     -- IncSearch    { }, -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
     -- Substitute   { }, -- |:substitute| replacement text highlighting
     LineNr       { fg = zambezi }, -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
     CursorLineNr { fg = silver_rust }, -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
-    MatchParen   { fg = wewak, gui="bold" }, -- The character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
+    MatchParen   { fg = wewak, gui = "bold" }, -- The character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
     -- ModeMsg      { }, -- 'showmode' message (e.g., "-- INSERT -- ")
     -- MsgArea      { }, -- Area for messages and cmdline
     -- MsgSeparator { }, -- Separator for scrolled messages, `msgsep` flag of 'display'
