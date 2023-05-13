@@ -327,6 +327,12 @@ local theme = lush(function()
     TelescopeSelectionCaret { fg = koromiko };
     TelescopePromptPrefix { fg = koromiko };
 
+    -- Coc.nvim
+    CocFloating  { fg = foreground, bg = background }, -- current match in 'wildmenu' completion
+    CocBorder    { fg = ship_cove , bg = background },
+    CocMenuSel   { fg = ship_cove.lighten(46), bg = ship_cove.darken(74) };
+    CocSearch    { Search };
+
     -- vim-sneak
 
     Sneak { Search };
