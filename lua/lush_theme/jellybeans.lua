@@ -143,8 +143,8 @@ local theme = lush(function()
     Normal       { bg = background, fg = foreground }, -- normal text
     -- NormalFloat  { }, -- Normal text in floating windows.
     -- NormalNC     { }, -- normal text in non-current windows
-    Pmenu        { fg = total_white, bg = background.lighten(4) }, -- Popup menu: normal item.
-    PmenuSel     { fg = total_black, bg = ship_cove, gui = "bold" }, -- Popup menu: selected item.
+    Pmenu        { fg = foreground, bg = background.lighten(4) }, -- Popup menu: normal item.
+    PmenuSel     { fg = ship_cove.lighten(46), bg = ship_cove.darken(60), gui="bold,italic" };
     -- PmenuSbar    { }, -- Popup menu: scrollbar.
     -- PmenuThumb   { }, -- Popup menu: Thumb of the scrollbar.
     Question     { fg = mantis }, -- |hit-enter| prompt and yes/no questions
@@ -322,7 +322,7 @@ local theme = lush(function()
 
     -- Telescope
     TelescopeBorder { fg = ship_cove };
-    TelescopeSelection { fg = ship_cove.lighten(46), bg = ship_cove.darken(74) };
+    TelescopeSelection { fg = ship_cove.lighten(46), bg = ship_cove.darken(74), gui="bold,italic" };
     TelescopeMatching { Search };
     TelescopeSelectionCaret { fg = koromiko };
     TelescopePromptPrefix { fg = koromiko };
@@ -330,7 +330,7 @@ local theme = lush(function()
     -- Coc.nvim
     CocFloating  { fg = foreground, bg = background }, -- current match in 'wildmenu' completion
     CocBorder    { fg = ship_cove , bg = background },
-    CocMenuSel   { fg = ship_cove.lighten(46), bg = ship_cove.darken(74) };
+    CocMenuSel   { fg = ship_cove.lighten(46), bg = ship_cove.darken(74), gui="bold,italic" };
     CocSearch    { Search };
 
     -- vim-sneak
