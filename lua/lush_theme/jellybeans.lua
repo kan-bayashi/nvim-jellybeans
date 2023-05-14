@@ -332,6 +332,8 @@ local theme = lush(function()
     CocBorder    { fg = ship_cove , bg = background },
     CocMenuSel   { fg = ship_cove.lighten(46), bg = ship_cove.darken(74), gui="bold,italic" };
     CocSearch    { Search };
+    PmenuSbar    { bg = background }, -- Popup menu: scrollbar.
+    PmenuThumb   { bg = ship_cove }, -- Popup menu: Thumb of the scrollbar.
 
     -- vim-sneak
 
