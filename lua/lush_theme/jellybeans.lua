@@ -132,6 +132,7 @@ local theme = lush(function(injected_functions)
     VertSplit    { fg = gravel }, -- the column separating vertically split windows
     Folded       { fg = grey_chateau, bg = bright_grey, gui = "italic"} , -- line used for closed folds
     FoldColumn   { fg = shuttle_grey, bg = mine_shaft}, -- 'foldcolumn'
+    FloatBorder  { fg = morning_glory }, -- Normal text in floating windows.
     SignColumn   { fg = boulder }, -- column where |signs| are displayed
     -- IncSearch    { }, -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
     -- Substitute   { }, -- |:substitute| replacement text highlighting
@@ -144,7 +145,7 @@ local theme = lush(function(injected_functions)
     MoreMsg      { fg = highland }, -- |more-prompt|
     NonText      { fg = scorpion }, -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
     Normal       { bg = background, fg = foreground }, -- normal text
-    -- NormalFloat  { }, -- Normal text in floating windows.
+    NormalFloat  { bg = background }, -- Normal text in floating windows.
     -- NormalNC     { }, -- normal text in non-current windows
     Pmenu        { fg = foreground, bg = background.lighten(4) }, -- Popup menu: normal item.
     PmenuSel     { fg = ship_cove.lighten(46), bg = ship_cove.darken(60), gui="bold,italic" };
@@ -246,6 +247,7 @@ local theme = lush(function(injected_functions)
     LspDiagnosticsUnderlineWarning       { sp = koromiko, gui="undercurl" }, -- Used to underline "Warning" diagnostics
     LspDiagnosticsUnderlineInformation   { sp = perano, gui="undercurl" }, -- Used to underline "Information" diagnostics
     LspDiagnosticsUnderlineHint          { sp = tea_green, gui="undercurl" }, -- Used to underline "Hint" diagnostics
+    LspSignatureActiveParameter          { bg = background, fg = ship_cove }, -- Used for the active parameter of the signature
 
     -- LspDiagnosticsFloatingError          { }, -- Used to color "Error" diagnostic messages in diagnostics float
     -- LspDiagnosticsFloatingWarning        { }, -- Used to color "Warning" diagnostic messages in diagnostics float
